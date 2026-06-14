@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Registro del torneo de videojuegos</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form action="" method="post">
+            <h2>Datos personales</h2>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus datos" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="fecha-nac" required>
+            <label for="pais">País de residencia:</label>
+            <select id="pais" name="pais" required>
+                <option value="" selected disabled>-- Seleccione su país --</option>
+                <option value="arg">Argentina</option>
+                <option value="bol">Bolivia</option>
+                <option value="bra">Brasil</option>
+                <option value="chi">Chile</option>
+                <option value="col">Colombia</option>
+                <option value="ecu">Ecuador</option>
+                <option value="par">Paraguay</option>
+                <option value="per">Perú</option>
+                <option value="uru">Uruguay</option>
+                <option value="ven">Venezuela</option>
+            </select>
+            <hr>
+            <h2>Datos del torneo</h2>
+            <p>Seleccione el juego a participar:</p>
+            <input type="radio" id="game1" name="game" value="Fortnite" required>
+            <label for="game1">Fortnite</label>
+            <input type="radio" id="game2" name="game" value="Call-of-duty">
+            <label for="game2">Call of Duty: Warzone</label>
+            <input type="radio" id="game3" name="game" value="Apex_legends">
+            <label for="game3">Apex Legends</label>
+            <label for="modo-juego">Modo del juego</label>
+            <select id="modo-juego" name="modo-juego" required>
+                <option value="" selected disabled>-- Seleccione el modo --</option>
+                <option value="Individual">Individual</option>
+                <option value="Grupal">Grupal</option>
+            </select>
+            <hr>
+            <h2>Nivel de experiencia</h2>
+            <p>Seleccione su nivel de experiencia:</p>
+            <input type="radio" id="principiante" name="experiencia" value="Principiante" required>
+            <label for="principiante">Principiante</label>
+            <input type="radio" id="intermedio" name="experiencia" value="Intermedio">
+            <label for="intermedio">Intermedio</label>
+            <input type="radio" id="avanzado" name="experiencia" value="Avanzado">
+            <label for="avanzado">Avanzado</label>
+            <hr>
+            <h2>Comentarios adicionales</h2>
+            <label for="comentario">Escriba su comentario</label>
+            <textarea id="comentario" name="comentario-adicional" placeholder="Escriba su comentario aquí..." cols="30" rows="4" required></textarea>
+            <hr>
+            <h2>Aviso legal</h2>
+            <input type="checkbox" id="terminos" name="terminos-condiciones" value="acepto" required>
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <button type="submit">Enviar información</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </body>
+</html>

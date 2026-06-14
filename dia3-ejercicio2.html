@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reservaciones Ethan</title>
+    </head>
+    <body>
+        <h1>Formulario para reservar una mesa en el restaurante Ethan</h1>
+        <form action="" method="post">
+            <h2>Datos del cliente</h2>
+            <label for="nombre">Ingrese su nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
+            <label for="correo">Ingrese su correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Email..." required>
+            <label for="telefono">Ingrese su número telefónico:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Telefono..." required>
+            <label for="fecha-reserva">Escoja la fecha de reservación</label>
+            <input type="date" id="fecha-reserva" name="fecha-reserva" min="2026-06-11" required>
+            <label for="hora-reserva">Escoja el horario</label>
+            <input type="time" id="hora-reserva" name="hora-reserva" min="11:00" max="23:00" step="900" required>
+            <hr>
+            <h2>Detalles de la reserva</h2>
+            <label for="num-personas">Número de personas que asistirán:</label>
+            <select id="num-personas" name="num-personas" required>
+                <option value="" selected disabled>-- Seleccione --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <p>Seleccione la zona de su preferencia:</p>
+            <input type="radio" id="interior" name="zona" value="interior" required>
+            <label for="interior">Interior</label>
+            <input type="radio" id="terraza" name="zona" value="terraza">
+            <label for="terraza">Terraza</label>
+            <input type="radio" id="barra" name="zona" value="barra">
+            <label for="barra">Barra</label>
+            <label for="ocasion-especial">Ocasión especial: </label>
+            <select id="ocasion-especial" name="ocasion-especial" required>
+                <option value="" selected disabled>--Seleccione la ocasión--</option>
+                <option value="Ninguna">Ninguna</option>
+                <option value="Cumpleanios">Cumpleaños</option>
+                <option value="Aniversario">Aniversario</option>
+                <option value="Reunion de negocios">Reunión de negocios</option>
+            </select>
+            <hr>
+            <h2>Preferencias alimentarias</h2>
+            <input type="checkbox" id="vegetariano" name="vegetariano" value="vegetariano">
+            <label for="vegetariano">Vegetariano</label>
+            <input type="checkbox" id="vegano" name="vegano" value="vegano">
+            <label for="vegano">Vegano</label>
+            <input type="checkbox" id="sin-gluten" name="sin-gluten" value="sin gluten">
+            <label for="sin-gluten">Sin gluten</label>
+            <input type="checkbox" id="sin-lactosa" name="sin-lactosa" value="sin lactosa">
+            <label for="sin-lactosa">Sin lactosa</label>
+            <hr>
+            <h2>Solicitud especial</h2>
+            <label for="solicitud">Escriba si tiene alguna solicitud</label>
+            <textarea id="solicitud" name="solicitud" placeholder="Escriba su solicitud especial..." cols="50" rows="6"></textarea>
+            <hr>
+            <h2>Importante</h2>
+            <input type="checkbox" id="aviso-confirmar" name="aviso-confirmar" value="confirmo" required>
+            <label for="aviso-confirmar">Confirmo que la reserva realizada es con al menos 24 horas de anticipación</label>
+            <button type="submit">Enviar reserva</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </body>
+</html>
