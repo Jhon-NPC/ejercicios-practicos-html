@@ -1,0 +1,144 @@
+<!--Primer ejercicio donde se integrara todo lo aprendido de HTML-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zero Code | Academia de Programación Online</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="nombre-academia">Zero Code</h1>
+            <p class="nombre-eslogan">Conectando tu talento con <span class="resaltar-eslogan">el código del futuro</span></p>
+            <nav>
+                <a href="#catalogo-cursos">Catálogo de cursos</a>
+                <a href="#modalidad">Modalidades de estudio</a>
+                <a href="#planes-precios">Planes y precios</a>
+                <a href="#iniciar-inscripcion">Iniciar inscripción</a>
+            </nav>
+        </header>
+        <main>
+            <section id="catalogo-cursos">
+                <!-- Sección con el catálogo de cursos disponibles -->
+                <h2 class="subtitulos-principales">Cursos <span class="texto-vacante">disponibles</span></h2>
+                <article>
+                    <h3>Desarrollo web moderno con <abbr title="Lenguaje de Marcado de Hipertexto">HTML</abbr> y CSS</h3>
+                    <p>Aprende a estructurar tus páginas utilizando el lenguaje de marcado HTML y a darles un 
+                        diseño profesional e interactivo desde cero.</p>
+                    <p>Duración: 8 semanas</p>
+                    <p>Precio: <strong>S/ 250.00</strong></p>
+                </article>
+                <article>
+                    <h3>Gestión de bases de datos con <abbr title="Lenguaje de Consulta Estructurada">SQL</abbr> Server</h3>
+                    <p>Domina la creación de tablas, la escritura de consultas complejas y la optimización de 
+                        bases de datos relacionales para manejar grandes volúmenes de información corporativa.</p>
+                    <p>Duración: 10 semanas</p>
+                    <p>Precio: <strong>S/ 320.00</strong></p>
+                </article>
+                <article>
+                    <h3>Programación robusta con <abbr title="Lenguaje multiplataforma de propósito general">Java</abbr></h3>
+                    <p>Introduce tus primeros pasos en la programación orientada a objetos, aprendiendo el 
+                        manejo de flujos de datos, control de excepciones y lógica avanzada de software.</p>
+                    <p>Duración: 12 semanas</p>
+                    <p>Precio: <strong>S/ 400.00</strong></p>
+                </article>
+            </section>
+            <section id="modalidad">
+                <!-- Sección con las modalidades de estudio disponibles -->
+                <h2 class="subtitulos-principales">Modalidades de estudio</h2>
+                <ul>
+                    <li><strong>Modalidad Online Asincrónica</strong>: Estudia a tu propio ritmo desde cualquier 
+                        lugar, con acceso permanente a los videos grabados de las clases y material teórico 
+                        las 24 horas del día.</li>
+                    <li><strong>Modalidad En Vivo</strong>: Conéctate a clases virtuales en tiempo real con 
+                        profesores expertos, participa en salas de debate y resuelve tus dudas en el mismo instante.</li>
+                    <li><strong>Modalidad Híbrida</strong>: Combina el autoaprendizaje digital en la plataforma 
+                        con talleres prácticos y mentorías individuales programadas una vez por semana.</li>
+                </ul>
+            </section>
+            <section id="planes-precios">
+                <!-- Sección con los planes y precios de la academia -->
+                <h2 class="subtitulos-principales">Planes y precios de nuestros servicios</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Duración de acceso</th>
+                            <th>Costo mensual</th>
+                            <th>Beneficios incluidos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plan estudiante</td>
+                            <td>Acceso por 3 meses</td>
+                            <td>S/ 80.00</td>
+                            <td>Clases grabadas y foro comunitario de ayuda</td>
+                        </tr>
+                        <tr>
+                            <td>Plan bootcamp</td>
+                            <td rowspan="2">Acceso por 12 meses</td>
+                            <td>S/ 150.00</td>
+                            <td>Clases en vivo, proyectos reales y certificado oficial</td>
+                        </tr>
+                        <tr>
+                            <td>Plan mentoria VIP</td>
+                            <td>S/ 290.00</td>
+                            <td>Todo lo anterior más asesoría uno a uno y bolsa de empleo exclusiva</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="iniciar-inscripcion">
+                <!-- Sección con el formulario de inscripción de los potenciales alumnos -->
+                <h2 class="subtitulos-principales">Formulario de inscripción</h2>
+                <form action="" method="post">
+                    <label for="nombre">Nombres y apellidos completos:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Ingrese sus datos..." required>
+                    <label for="correo">Correo electrónico personal: </label>
+                    <input id="correo" type="email" name="correo" placeholder="Ingrese su correo..." required>
+                    <label for="telefono">Número de teléfono:</label>
+                    <input id="telefono" type="tel" name="telefono" pattern="[0-9]{9}" placeholder="Ingrese su número..." required>
+                    <label for="curso-interes">Curso de interés:</label>
+                    <select id="curso-interes" name="curso-interes" required>
+                        <option value="" selected disabled>-- Selecciona el curso de tu interés --</option>
+                        <option value="desarrollo-web">Desarrollo web moderno con HTML y CSS</option>
+                        <option value="gestion-bd">Gestión de bases de datos con SQL</option>
+                        <option value="prog-java">Programación con Java</option>
+                    </select>
+                    <p>Modalidad preferida:</p>
+                    <input id="virtual-asincrono" type="radio" name="modalidad-preferida" value="Virtual asincrónico" required>
+                    <label for="virtual-asincrono">Virtual asincrónico</label>
+                    <input id="clase-vivo" type="radio" name="modalidad-preferida" value="Clases en vivo">
+                    <label for="clase-vivo">Clases en vivo</label>
+                    <input id="hibrido-semi" type="radio" name="modalidad-preferida" value="Híbrido semipresencial">
+                    <label for="hibrido-semi">Híbrido semipresencial</label>
+                    <label for="comentario">Comentarios adicionales o consultas específicas:</label>
+                    <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario o consulta..." cols="50" rows="5"></textarea>
+                    <input id="acepta-casilla" type="checkbox" name="acepto-terminos-condiciones" value="confirmo" required>
+                    <label for="acepta-casilla">Acepto los términos y condiciones de la academia y las políticas de privacidad</label>
+                    <button type="submit">Enviar ficha de inscripción</button>
+                    <button type="reset">Borrar formulario</button>
+                </form>
+            </section>
+            <aside>
+                <h3>Zero Code en cifras</h3>
+                <ul>
+                    <li>Más de 5,000 alumnos egresados laborando en el sector tecnológico.</li>
+                    <li>6 años de experiencia brindando capacitación técnica especializada.</li>
+                    <li>Horario de atención al estudiante
+                        <ul>
+                            <li>Lunes a Viernes de 8:00 a.m. a 8:00 p.m.</li>
+                            <li>Sábados de 9:00 a.m. a 1:00 p.m.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <h3>Redes sociales</h3>
+            <p>Síguenos en nuestro perfil de <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+            <p>Mira nuestros proyectos en el repositorio de <a href="https://github.com" target="_blank">GitHub</a></p>
+            <p>Derechos de autor: © 2026 Zero Code Academia Tecnológica. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>

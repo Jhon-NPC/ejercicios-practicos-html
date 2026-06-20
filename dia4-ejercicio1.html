@@ -6,8 +6,10 @@
   </head>
   <body>
     <header id="inicio">
+      <!--Visualización del titulo y eslogan del blog-->
       <h1>Código Zero</h1>
       <p>Estructurando ideas, analizando el futuro.</p>
+      <!--Barra de navegación a secciones especificas del blog -->
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#ultimos-articulos">Artículos</a>
@@ -15,11 +17,13 @@
       </nav>
     </header>
     <main>
+      <!--Seccion del blog que muestra los ultimos articulos publicados-->
       <section id="ultimos-articulos">
         <h2>Últimos artículos</h2>
         <article>
-          <h3>El poder de las consultas relacionales con T-SQL</h3>
-          <p>Publicado el 10 de junio de 2026</p>
+          <h3 class="titulo-articulo">El poder de las consultas relacionales con 
+            <abbr title="Structured Query Language">SQL</abbr></h3>
+          <p class="fecha-publicado">Publicado el <span class="fecha-resaltar">10 de junio de 2026</span></p>
           <p>
             Escribir consultas eficientes en bases de datos requiere entender cómo el motor procesa cada 
             línea. En este artículo exploramos cómo las subconsultas y las funciones de ventana optimizan 
@@ -28,14 +32,15 @@
           </p>
         </article>
         <article>
-          <h3>Primeros pasos en la gestión de errores con Java</h3>
-          <p>Publicado el 2 de junio de 2026</p>
+          <h3 class="titulo-articulo">Primeros pasos en la gestión de errores con Java</h3>
+          <p class="fecha-publicado">Publicado el <span class="fecha-resaltar">2 de junio de 2026</span></p>
           <p>Capturar excepciones a tiempo es la clave para crear aplicaciones robustas. Analizamos cómo 
             el uso correcto de los bloques try-catch y el manejo de flujos de entrada de datos evitan que
             los programas colapsen ante ingresos inesperados del usuario, mejorando por completo la 
             experiencia de desarrollo.</p>
         </article>
       </section>
+      <!--Seccion muestra información sobre el creador del blog-->
       <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>¡Hola! Soy un apasionado por la tecnología, el desarrollo de software y el análisis de datos. 
@@ -45,14 +50,16 @@
         <a href="https://www.linkedin.com">LinkedIn</a>
         <a href="https://github.com">GitHub</a>
       </section>
+      <!--Barra lateral que muestra temas o articulos relacionados -->
       <aside>
         <h3>Temas sugeridos</h3>
         <a href="">Guía de instalación para Power BI Desktop</a>
         <a href="">Optimización de tablas mediante índices agrupados</a>
-        <a href="">Introducción práctica a las etiquetas de HTML5</a>
+        <a href="">Introducción práctica a las etiquetas de <abbr title="HyperText Markup Language">HTML</abbr></a>
       </aside>
     </main>
     <footer>
+      <!--Contenido del pie de pagina que agrega derecho de autor y links-->
       <p>Derechos de autor: © 2026 Código Zero. Todos los derechos reservados.</p>
       <a href="">Política de privacidad</a>
       <a href="">Términos de Servicio</a>

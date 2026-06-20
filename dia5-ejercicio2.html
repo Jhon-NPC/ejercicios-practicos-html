@@ -1,0 +1,130 @@
+<!--Ejercicio final donde se integrara todo lo aprendido de HTML-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>CineLab 2026 | Festival de cine independiente</title>
+    </head>
+    <body>
+        <!-- Información como titulo y eslogan de que trata la página-->
+        <header>
+            <h1>CineLab</h1>
+            <p>El espacio donde las historias independientes <span class="resaltar-parte-eslogan">cobran vida</span></p>
+            <nav>
+                <a href="#seleccion-peliculas">Selección oficial</a>
+                <a href="#categoria-premio">Premios y categorías</a>
+                <a href="#comprar-entrada">Comprar entradas</a>
+                <a href="#informacion">Información útil</a>
+            </nav>
+        </header>
+        <main>
+            <section id="informacion">
+                <h2 class="subtitulos-pagina">Información de apertura</h2>
+                <p>Del 15 al 22 de agosto de 2026 en el Centro Cultural de Lima.</p>
+            </section>
+            <hr>
+            <section id="seleccion-peliculas">
+                <h2>Películas en competencia</h2>
+                <article>
+                    <h3>Ecos del Asfalto</h3>
+                    <p>Director: Mateo Espinoza</p>
+                    <p>Género: Drama Urbano</p>
+                    <p>Duración: 95 minutos</p>
+                    <p>Sinopsis: Un retrato íntimo sobre la vida nocturna de tres jóvenes que buscan cumplir sus 
+                        sueños musicales en los rincones menos conocidos de la gran ciudad.</p>
+                </article>
+                <article>
+                    <h3>Raíces del Viento</h3>
+                    <p>Directora: Valeria Mendoza</p>
+                    <p>Género: Documental / Naturaleza</p>
+                    <p>Duración: 82 minutos</p>
+                    <p>Sinopsis: Un viaje visual profundo hacia las comunidades de los Andes peruanos y su lucha 
+                        por preservar las fuentes de agua frente al cambio climático.</p>
+                </article>
+                <article>
+                    <h3>Paranoia Cero</h3>
+                    <p>Director: Lucas Torres</p>
+                    <p>Género: Suspenso / Ciencia Ficción</p>
+                    <p>Duración: 110 minutos</p>
+                    <p>Sinopsis: En un futuro cercano, un analista de datos descubre un patrón extraño en las 
+                        redes de comunicación que podría cambiar la percepción de la realidad de toda su comunidad.</p>
+                </article>
+            </section>
+            <section id="categoria-premio">
+                <h2 class="subtitulos-pagina">Categorías y premios</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Premio</th>
+                            <th>Jurado encargado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ficción internacional</td>
+                            <td>Estatuilla CineLab de plata y S/ 10 000</td>
+                            <td rowspan="2">Críticos de la asociación de cine</td>
+                        </tr>
+                        <tr>
+                            <td>Miradas de la realidad</td>
+                            <td>Estatuilla CineLab de Plata y S/ 7 000</td>
+                        </tr>
+                        <tr>
+                            <td>Votación del espectador</td>
+                            <td>Diploma de Honor del Festival</td>
+                            <td>Votos del público asistente al finalizar cada función</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="comprar-entrada">
+                <h2 class="subtitulos-pagina">Formulario de entradas y acreditación</h2>
+                <form action="" method="post">
+                    <label for="nombres">Nombres y apellidos completos:</label>
+                    <input id="nombres" type="text" name="nombres" placeholder="Ingrese sus datos..." required>
+                    <label for="correo">Correo electrónico personal:</label>
+                    <input id="correo" type="email" name="correo" placeholder="Ingrese su correo..." required>
+                    <label for="celular">Ingrese su número telefónico:</label>
+                    <input id="celular" type="tel" name="celular" pattern="[0-9]{9}" placeholder="Ingrese su número..." required>
+                    <label for="tipo-pase">Tipo de pase</label>
+                    <select id="tipo-pase" name="tipo-pase" required>
+                        <option value="" selected disabled>-- Elige tu tipo de acceso --</option>
+                        <option value="entrada general">Entrada general por función (S/ 15.00)</option>
+                        <option value="pase libre">Pase libre estudiante (S/ 60.00 - Acceso total)</option>
+                        <option value="prensa">Acreditación de prensa (Requiere validación)</option>
+                    </select>
+                    <p>Método de pago</p>
+                    <input id="pago-credito" type="radio" name="pago" value="credito" required>
+                    <label for="pago-credito">Pago con tarjeta de crédito</label>
+                    <input id="pago-debito" type="radio" name="pago" value="debito">
+                    <label for="pago-debito">Pago con tarjeta de débito</label>
+                    <input id="pago-digital" type="radio" name="pago" value="digital">
+                    <label for="pago-digital">Transferencia digital (Yape/Plin)</label>
+                    <label for="consulta">Duda o consulta:</label>
+                    <textarea id="consulta" name="consulta" placeholder="Escribanos..." cols="50" rows="5"></textarea>
+                    <input id="confirmacion" type="checkbox" name="confirmacion" value="confirmacion" required>
+                    <label for="confirmacion">Declaró que los datos ingresados son correctos y acepto las políticas de reserva de CineLab</label>
+                    <button type="submit">Confirmar reserva de entradas</button>
+                    <button type="reset">Reiniciar datos</button>
+                </form>
+            </section>
+            <!-- Información de la barra lateral-->
+            <aside>
+                <h3>Guía del asistente</h3>
+                <ul>
+                    <li>Sede Principal: Auditorio Central, Avenida Larco 770, Miraflores.</li>
+                    <li>Horarios de las funciones: Bloque de tarde (3:00 p.m. a 6:00 p.m.) y Bloque de noche (7:00 p.m. a 10:00 p.m.).</li>
+                    <li>Protocolo de ingreso: Las puertas de las salas se abren exactamente 20 minutos antes de cada proyección. No se permitirá el ingreso una vez iniciada la película.</li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <h3>Nuestras redes</h3>
+            <p>Sigue la cobertura en vivo por <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+            <p>Mira los trailers oficiales en nuestro canal de <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+            <p>Derechos de autor: © 2026 CineLab Festival Internacional. Espacio de difusión cultural sin fines de lucro.</p>
+        </footer>
+    </body>
+</html>
